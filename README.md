@@ -53,3 +53,9 @@ File ini yang akan kita dekripsi menggunakan openssl dengan perintah `openssl de
 ### Nomor 10
 
 Pada soal nomor 10, kita diminta untuk mencari tahu password rahasia (flag) nya. Sesuai dengan hasil pengerjaan nomor 9, flagnya merupakan isi dari `flag.txt`, yaitu `JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}`
+
+## Kendala Pengerjaan
+
+Pada saat proses pengerjaan, terdapat beberapa kendala yaitu
+- untuk nomor 8, sebelumnya kami belum mengetahui fitur 'Follow TCP stream' pada wireshark, sehingga kami harus membaca satu persatu isi dari pesan pada setiap paket
+- untuk nomor 9 dan 10, sebelumnya kami belum mengetahui maksud dari soal dan ekspektasi output dari soal tersebut. Kami juga kurang memahami secara teknis cara mengerjakannya.
