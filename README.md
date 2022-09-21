@@ -36,5 +36,18 @@ Setelah itu, kita bisa melakukan Follow tcp stream yang merupakan fitur pada wir
 ![percakapan](https://user-images.githubusercontent.com/52820619/191510117-74b07ec4-9dbb-4e4b-bdf5-4c424487b40e.png)
 
 ### Nomor 9
+Pada soal nomor 9, kita diminta untuk mencari sebuah file yang dilaporkan terdapat pada sebuah transaksi oleh kedua mahasiswa tersebut. Kita diminta untuk menyimpan nama file tersebut menjadi `[nama kelompok].des3`, yaitu `E02.des3`. Kita juga diminta untuk melakukan dekripsi pada file tersebut menjadi `flag.txt`.
+
+Untuk transaksinya sendiri, berdasarkan clue pada percakapan mereka, transaksi pertukaran file dilakukan pada port 9002. Sehingga kita perlu menggunakan filter tambahan berupa `tcp.port == 9002`, sehingga display filternya menjadim `tcp.port==9002 and (ip.src==127.0.0.1 or ip.src==127.0.1.1)`, maka didapatkan hasil sebagai berikut.
+
+![image](https://user-images.githubusercontent.com/52820619/191516281-fc777ab9-571a-4021-81b9-2e70b84e48ac.png)
+
+Lalu, kita lakukan Follow TCP stream, dan untuk pilihan show data as, kita pilih raw, untuk mendapatkan data mentah, maka didapatkan hasil sebagai berikut. data ini yang akan disimpan sebagai `E02.des3`
+
+![image](https://user-images.githubusercontent.com/52820619/191510148-c3ef7bbb-358d-4476-b595-3f6c82150f2c.png)
+
+File ini yang akan kita dekripsi menggunakan openssl dengan perintah `openssl des3 -d -in E02.des3 -out flag.txt`. Setelah itu, masukkan password yang diminta. Berdasarkan clue pada percakapan kedua mahasiswa tersebut (anime kembar lima), jawabannya yaitu **nakano**. Setelah itu, buka file `flag.txt`, maka hasilnya akan menjadi seperti berikut.
+
+![image](https://user-images.githubusercontent.com/52820619/191510159-35407bf9-4ef4-4088-802e-841019fa9ca7.png)
 
 ### Nomor 10
