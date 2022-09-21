@@ -51,3 +51,5 @@ File ini yang akan kita dekripsi menggunakan openssl dengan perintah `openssl de
 ![image](https://user-images.githubusercontent.com/52820619/191510159-35407bf9-4ef4-4088-802e-841019fa9ca7.png)
 
 ### Nomor 10
+
+Pada soal nomor 10, kita diminta untuk mencari tahu password rahasia (flag) nya. Sesuai dengan hasil pengerjaan nomor 9, flagnya merupakan isi dari `flag.txt`, yaitu `JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}`
