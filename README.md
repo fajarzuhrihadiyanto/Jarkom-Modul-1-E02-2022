@@ -6,10 +6,24 @@
 
 ## Penjelasan Pengerjaan
 ### Nomor 1
+Pertama, kita melakukan ping pada server monta untuk mendapatkan ip addressnya
+![image](https://user-images.githubusercontent.com/94377420/191794346-ca32870b-97f1-4d24-a382-59f0916a1dea.png)
+![image](https://user-images.githubusercontent.com/94377420/191794160-2bceb7bc-0db2-4cbb-91fa-62a6fd3d229e.png)
+Maka didapatkan ip-nya yaitu 103.94.189.5. Ip address ini yang dijadikan sebagai filter
+pada wireshark. Dengan filter protokol http dan ip src-nya, maka didapatkan server yang
+digunakan, yaitu nginx
 
 ### Nomor 2
+Gunakan filter request url untuk path “/detailTopik”. Didapatkan 1 buah paket yang berisi
+info id detail topik, yaitu 194
+![image](https://user-images.githubusercontent.com/94377420/191794734-80fb1731-371d-4131-8410-35bb8b9dd18f.png)
+Nah, id ini yang dijadikan path menuju detail topiknya, maka didapatkan judulnya yaitu
+“Evaluasi unjuk kerja User Space Filesystem (FUSE)”
+![image](https://user-images.githubusercontent.com/94377420/191794840-cc834221-5d39-44fe-ac84-8723bbed3c4c.png)
 
 ### Nomor 3
+Gunakan filter tcp.dstport pada display filter dengan value 80
+![image](https://user-images.githubusercontent.com/94377420/191795357-b32f320f-127f-4d26-a555-29ea2f46a03b.png)
 
 ### Nomor 4
 
