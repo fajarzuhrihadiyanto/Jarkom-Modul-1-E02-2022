@@ -26,10 +26,16 @@ Gunakan filter tcp.dstport pada display filter dengan value 80
 ![image](https://user-images.githubusercontent.com/94377420/191795357-b32f320f-127f-4d26-a555-29ea2f46a03b.png)
 
 ### Nomor 4
+Gunakan tcp.src port untuk memfilter port asal dengan value 21
+![image](https://user-images.githubusercontent.com/94377420/191795771-cf6b69e1-20b6-4785-b65e-9b5c38d08fde.png)
 
 ### Nomor 5
+Sama halnya dengan nomor 4, namun ganti valuenya dengan 443
+![image](https://user-images.githubusercontent.com/94377420/191796003-197a1ff2-dfd1-42c5-9d07-af4f4156df29.png)
 
 ### Nomor 6
+Gunakan filter http.host dengan value yaitu match dengan lipi.go.id
+![image](https://user-images.githubusercontent.com/94377420/191796143-c2aa8432-33db-406e-a9dc-e5a5acb9e03c.png)
 
 ### Nomor 7
 Pada soal nomor 7, kita diminta untuk melakukan filter agar paket yang dicapture hanya yang berasal dari ip laptop kita. Pertama, kita cari tahu terlabih dahulu ip laptop kita pada adapter yang terhubung ke internet, dalam kasus ini, pada laptop saya menggunakan adapter wifi.
